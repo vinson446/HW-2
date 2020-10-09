@@ -18,10 +18,10 @@ public class InventoryDrawer : PropertyDrawer
         EditorGUI.indentLevel = 0;
 
         // calculate rects
-        var nameRect = new Rect(position.x - 55, position.y, 75, position.height);
-        var valueRect = new Rect(position.x + 30, position.y, 35, position.height);
-        var tierRect = new Rect(position.x + 75, position.y, 75, position.height);
-        var slotRect = new Rect(position.x + 160, position.y, 60, position.height);
+        var nameRect = new Rect(position.x - 75, position.y, 120, position.height);
+        var valueRect = new Rect(position.x + 60, position.y, 45, position.height);
+        var tierRect = new Rect(position.x + 120, position.y, 85, position.height);
+        var slotRect = new Rect(position.x + 220, position.y, 65, position.height);
 
         // draw fields - pass GUIContent.none to each so they are drawn without labels
         EditorGUI.PropertyField(nameRect, property.FindPropertyRelative("Name"), GUIContent.none);
